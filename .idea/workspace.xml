@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1abfe4af-f0cd-4196-be26-4b4c0359a1c5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eD6eBAtgInPGPhouUeKe7DJeXE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.oppo.usercenter.ojt.netty.rpc.simple_rpc.consumer" />
+      <recent name="com.oppo.usercenter.ojt.netty.tomcat.servlet" />
+      <recent name="com.oppo.usercenter.ojt.reactor.multi_thread" />
+      <recent name="com.oppo.usercenter.ojt.reactor.onethread" />
+      <recent name="com.oppo.usercenter.ojt.zerocopy" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\uc-ojt-nio\src\main\java\com\oppo\usercenter\ojt\netty\rpc\dubbo_rpc" />
+      <recent name="D:\WorkSpace\uc-ojt-nio\src\main\java\com\oppo\usercenter\ojt\netty\rpc\simple_rpc" />
+      <recent name="D:\WorkSpace\uc-ojt-nio\src\main\java\com\oppo\usercenter\ojt\reactor\multi_thread_2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NettyTomcat">
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oppo.usercenter.ojt.netty.helloword.NettyClient" />
+      <module name="uc-ojt-nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oppo.usercenter.ojt.netty.helloword.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oppo.usercenter.ojt.netty.helloword.NettyServer" />
+      <module name="uc-ojt-nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oppo.usercenter.ojt.netty.helloword.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyTomcat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oppo.usercenter.ojt.netty.tomcat.server.NettyTomcat" />
+      <module name="uc-ojt-nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oppo.usercenter.ojt.netty.tomcat.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcConsumer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.consumer.RpcConsumer" />
+      <module name="uc-ojt-nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RpcProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.provider.RpcProvider" />
+      <module name="uc-ojt-nio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RpcProvider" />
+      <item itemvalue="Application.RpcConsumer (1)" />
+      <item itemvalue="Application.NettyServer" />
+      <item itemvalue="Application.NettyClient" />
+      <item itemvalue="Application.NettyTomcat" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NettyTomcat" />
+        <item itemvalue="Application.NettyClient" />
+        <item itemvalue="Application.NettyServer" />
+        <item itemvalue="Application.RpcConsumer (1)" />
+        <item itemvalue="Application.RpcProvider" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1abfe4af-f0cd-4196-be26-4b4c0359a1c5" name="Default Changelist" comment="" />
+      <created>1593843908540</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593843908540</updated>
+      <workItem from="1593843912955" duration="95000" />
+      <workItem from="1593844033711" duration="24405000" />
+      <workItem from="1594393100438" duration="31737000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593927416014">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1593927416014" />
+    <state x="563" y="132" key="#com.intellij.ide.util.MemberChooser" timestamp="1594457089141">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="563" y="132" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594457089141" />
+    <state x="301" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594454703647">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="301" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1594454703647" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1593844153570">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593844153570" />
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom" timestamp="1594546649136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594546649136" />
+    <state width="1493" height="191" key="GridCell.Tab.0.center" timestamp="1594546649136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594546649136" />
+    <state width="1493" height="191" key="GridCell.Tab.0.left" timestamp="1594546649136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594546649136" />
+    <state width="1493" height="191" key="GridCell.Tab.0.right" timestamp="1594546649136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594546649136" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1594546647302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594546647302" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1594546647302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594546647302" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1594546647302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594546647302" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1594546647302">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594546647302" />
+    <state x="272" y="58" key="SettingsEditor" timestamp="1594445767797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="272" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594445767797" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1593844050653">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593844050653" />
+    <state x="511" y="36" key="refactoring.ChangeSignatureDialog" timestamp="1594437760251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="36" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1594437760251" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594480257004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594480257004" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.46.Final/netty-all-4.1.46.Final-sources.jar!/io/netty/handler/codec/string/StringEncoder.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
