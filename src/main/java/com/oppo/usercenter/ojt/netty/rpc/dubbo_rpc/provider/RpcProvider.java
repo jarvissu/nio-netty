@@ -23,7 +23,7 @@ public class RpcProvider {
     public void start() throws InterruptedException {
         // 注册当前service到注册中心
         ProviderRegistry providerRegistry = new ProviderRegistry("127.0.0.1", this.port);
-        providerRegistry.register("127.0.0.1", 9000, "com.oppo.usercenter.ojt.netty.rpc.api");
+        providerRegistry.register("127.0.0.1", 9001, "com.oppo.usercenter.ojt.netty.rpc.api");
         System.out.println("Register success!");
 
         ServerBootstrap serverBootstrap = new ServerBootstrap();
@@ -59,7 +59,7 @@ public class RpcProvider {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        int port = 9001;
+        int port = 9002;
         new RpcProvider(port).start();
     }
 }

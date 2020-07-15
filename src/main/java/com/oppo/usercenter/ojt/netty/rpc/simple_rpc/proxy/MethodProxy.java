@@ -73,7 +73,7 @@ public class MethodProxy implements InvocationHandler {
             @Override
             public void operationComplete(Future<? super Void> future) throws Exception {
                 loopGroup.shutdownGracefully();
-                System.out.println("Consume finished!");
+//                System.out.println("Consume finished!");
             }
         });
         closeFuture.sync();

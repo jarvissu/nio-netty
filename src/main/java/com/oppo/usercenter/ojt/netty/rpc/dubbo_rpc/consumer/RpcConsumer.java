@@ -8,7 +8,7 @@ public class RpcConsumer {
 
     public static void main(String[] args) {
         String registryHost = "127.0.0.1";
-        int registryPort = 9000;
+        int registryPort = 9001;
 
         HelloService helloService = RpcProxy.createProxy(HelloService.class, registryHost, registryPort);
         helloService.sayHello("苏童");

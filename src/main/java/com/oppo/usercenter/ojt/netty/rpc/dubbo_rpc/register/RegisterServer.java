@@ -53,7 +53,7 @@ public class RegisterServer {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        int port = 9000;
+        int port = 9001;
         new RegisterServer(port).start();
     }
 }

@@ -55,7 +55,7 @@ public class MethodProxy implements InvocationHandler {
             throw new RuntimeException("no such provider!");
         }
 
-        System.out.println("[providerProtocol]: [" + JSON.toJSONString(providerProtocol) + "]");
+//        System.out.println("[providerProtocol]: [" + JSON.toJSONString(providerProtocol) + "]");
         /*封装协议传输*/
         InvokerProtocol msg = new InvokerProtocol();
         msg.setServiceName(clazz.getName());
@@ -90,7 +90,7 @@ public class MethodProxy implements InvocationHandler {
             @Override
             public void operationComplete(Future<? super Void> future) throws Exception {
                 loopGroup.shutdownGracefully();
-                System.out.println("Consume finished!");
+//                System.out.println("Consume finished!");
             }
         });
         closeFuture.sync();
