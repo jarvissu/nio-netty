@@ -33,8 +33,9 @@ public class ChannelZeroCopy implements Copy{
 
         long start = System.currentTimeMillis();
         // trasferFrom 实现零拷贝
+//        inChannel.transferTo(0, inChannel.size(), outChannel);
         outChannel.transferFrom(inChannel, 0, inChannel.size());
-        outChannel.force(true);
-        System.out.println("Copy time=[" + (System.currentTimeMillis() - start) + "ms]");
+//        outChannel.force(true);
+        System.out.println("Copyaaa time=[" + (System.currentTimeMillis() - start) + "ms]");
     }
 }

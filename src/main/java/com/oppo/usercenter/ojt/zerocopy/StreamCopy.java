@@ -44,7 +44,7 @@ public class StreamCopy implements Copy{
             outputStream.write(buffer);
         }
 
-        outputStream.flush();
+//        outputStream.flush();
         System.out.println("Copy time=[" + (System.currentTimeMillis() - start) + "ms]");
     }
 }
