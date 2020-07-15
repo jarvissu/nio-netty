@@ -44,7 +44,33 @@
 **待学习补充。。。**
 
 #### netty
+##### Netty简单介绍
+1. Netty高性能的几大原因：
+    - 基于NIO实现的IO多路复用（Reactor模型）
+    - 大量使用对外内存，不依赖JVM管理内存
+    - 支持高性能序列化组件
+    - 请求串行化处理，避免多线程下的资源竞争问题
+    - 对CAS锁及volatile关键字的合理使用
+2. 几大核心组件
+    - EventLoop：对应上述Reactor模型中的一个SubReactor，在底层封装了一个NIO的Selector，并且底层是一个单线程的架构。
+    - EventLoopGroup：封装多个EventLoop，同时实现了ExecutorService，通过线程池的方式管理多个EventLoop
+    - ChannelInboundHandler：处理入站处理器，主要用于接收IO请求
+    - ChannelOutboundHandler：出站处理器，主要用于响应IO请求，向客户端（服务器）写入数据。
+    - ChannelPipeline：一个双向的链表结构，节点是ChannelHandlerContext对象。其中头结点为HeadContext，尾结点为TailContext
+    - ChannelHandlerContext：对应一个Channel和一个ChannelHandler。
+    - HeadContext：ChannelPipeline头结点，其中outbound属性为true，inbound属性为false。所有出站处理器的最后一个节点，用于通过Nio的SocketChannel先对端发送数据
+    - TailContext：ChannelPipeline尾结点，其中outbound属性为false，inboud属性为true。所有入站处理器的最后一个节点。默认实现为空，即不对请求输入数据执行任何操作。
+    - ByteBuf：底层对ByteBuffer的进一步封装，从而提供safe/unsafe，pooled/unpooled, head/direct排列组合共八种不同的实现。以适应各种应用场景
+    - Encoder：编码器，一种特殊的ChannelOutboundHandler
+    - Decoder：解码器，一种特殊的ChannelInboundHandler
+    - NioServerSocketChannel：服务端Channel，对Java原生NIO中的ServerSocketChannel的进一步封装，注册OP_ACCEPT事件。
+    - NioSocketChannel：客户端Channel，对Java原生NIO的SocketChannel的进一步封装，可以注册OP_CONNECT，OP_READ，OP_WRITE事件。
+##### Netty实战
 `com.oppo.usercenter.ojt.netty`
 1. Netty入门
+     - `NettyServer`：基于Netty实现的服务器，接收用户请求，并将该请求返回给客户端
+     - `NettyClientEchoHandler`：服务器端IO事件处理器，实现SimpleChannelInboundHandler，入站处理器
+     - `NettyClient`: 基于Netty实现的一个简易客户端，用于向服务器端发送数据（字符串）
+     - `NettyClientEchoHandler`：接收服务器响应的数据
 2. Netty实现简易Tomcat
 3. Netty实现简易Rpc框架                         
