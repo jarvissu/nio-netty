@@ -73,4 +73,24 @@
      - `NettyClient`: 基于Netty实现的一个简易客户端，用于向服务器端发送数据（字符串）
      - `NettyClientEchoHandler`：接收服务器响应的数据
 2. Netty实现简易Tomcat
-3. Netty实现简易Rpc框架                         
+    - Request：封装并解析http请求头及请求url
+    - Response：封装响应体，向客户端响应数据
+    - FirstServlet & SecondServlet：创建两个简单的Servlet类
+    - NettyTomcat：基于Netty实现的tomcat，监听http连接请求，解析web.properties，生成ServletMapping（即url到servlet的映射关系）
+    - NettyHandler：用于处理连接请求，根据请求url从解析web.properties生成的ServletMapping中取出对应的Servlet，并执行其service方法。同时将响应数据返回（写）给客户端。
+3. Netty实现简易Rpc框架：实现了两个简易rpc框架
+    1. 最简单的rpc：仅基于Netty实现一个注册中心，由注册中心直接调用provider的接口，并将响应值返回给consumer。
+    2. 类似Dubbo的Rpc：
+       - `com.oppo.usercenter.ojt.netty.rpc.api`: 定义了两个api接口，HelloService和CurdService                      
+       - `com.oppo.usercenter.ojt.netty.rpc.provider`: api包中两个接口的实现，HelloServiceImpl和CurdServiceImpl                      
+       - `com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.register`：实现了一个注册中心，类似dubbo中的zookeeper功能。基于Netty实现网络通信，同时利用Map保存api接口和provider的元数据之间的映射关系
+       - `com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.protocol`：定义通信协议：
+        1. RegisterProtocol：注册协议，封装provider的host和port以及api接口，协议类型（Provider&Consumer）
+        2. InvokerProtocol：调用协议，封装请求api接口定义，调用方法及参数类型，参数值。
+       - `com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.provider`: 接口提供者实现。
+        1. 基于Netty通信，作为客户端，将自己定义的api接口及host，port信息封装成RegisterProtocol保存到注册中心。
+        2. 基于Netty通信，作为服务端，监听客户端的rpc远程调用，执行调用的api接口及方法，同时将响应结果返回给客户端
+       - `com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.proxy`: 通过动态代理的方式实现远程rpc调用。
+        1. 基于Netty通信，请求注册中心，从注册中心获取到api接口对应的provider元数据信息。
+        2. 基于Netty通信，根据从注册中心获取的provider元数据信息远程调用Provider中的接口，获取返回值。
+       - `com.oppo.usercenter.ojt.netty.rpc.dubbo_rpc.consumer`: Consumer实现，通过代理实现远程rpc调用。
