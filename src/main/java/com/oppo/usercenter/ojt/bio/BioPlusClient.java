@@ -10,7 +10,7 @@ public class BioPlusClient {
         String host = "127.0.0.1";
         int port = 8080;
         BioClient client = new BioClient(host, port);
-        for (int i = 0; i < 200; i++) {
+        for (int i = 0; i < 20; i++) {
 //            client.write("Hello OPPO！");
             new ConnectThread(client, "Thread-" + i).start();
         }

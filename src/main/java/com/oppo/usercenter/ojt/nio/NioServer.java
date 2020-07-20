@@ -29,6 +29,7 @@ public class NioServer {
 
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
         while (true) {
+//            System.out.println("select:");
             selector.select();
             Set<SelectionKey> selectionKeys = selector.selectedKeys();
             Iterator<SelectionKey> iterator = selectionKeys.iterator();

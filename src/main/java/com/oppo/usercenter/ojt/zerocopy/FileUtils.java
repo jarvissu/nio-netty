@@ -15,7 +15,7 @@ public class FileUtils {
         String src = "D:\\OPPO_WORK\\oppo-ojt\\zerocopy\\DingTalk_v5.0.6.114.exe";
         String dest = "D:\\OPPO_WORK\\oppo-ojt\\zerocopy\\DingTalk_v5.0.6.114.exe.bak";
 
-//        new StreamCopy().copy(src, dest);          // Copy time=[1933ms]
-        new ChannelZeroCopy().copy(src, dest);       //Copyaaa time=[455ms]
+        new StreamCopy().copy(src, dest);          // Copy time=[1933ms]
+//        new ChannelZeroCopy().copy(src, dest);       //Copyaaa time=[455ms]
     }
 }

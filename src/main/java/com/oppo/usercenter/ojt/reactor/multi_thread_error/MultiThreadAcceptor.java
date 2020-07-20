@@ -48,6 +48,8 @@ public class MultiThreadAcceptor implements Runnable {
             * 所以导致register方法会阻塞
              */
             SelectionKey key = channel.register(selector,  0);
+            System.out.println("channel is registered!");
+
             key.attach(new MultiThreadHandler(selector, channel));
             key.interestOps(SelectionKey.OP_READ);
         } catch (Exception e) {

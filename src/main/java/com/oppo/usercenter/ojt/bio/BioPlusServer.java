@@ -51,7 +51,7 @@ public class BioPlusServer {
                  OutputStream outputStream = socket.getOutputStream();) {
 
                 // 模拟服务端任务执行耗时
-                Thread.sleep(1000);
+//                Thread.sleep(1000);
 
                 byte[] buffer = new byte[BUFFER_LENGTH];
                 while (true) {
